@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="800.0" prefWidth="1099.0" style="-fx-background-color: B7CADB;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.AjouterReclamationController">
+   <children>
+      <ImageView fx:id="imageR" fitHeight="479.0" fitWidth="646.0" layoutX="408.0" layoutY="136.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="21.0">
+         <image>
+            <Image url="@../Images/pngtree-injured-employee-with-crutches-and-business-offer-insurance-for-claim-document-png-image_5710185.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <Label layoutX="37.0" layoutY="193.0" prefHeight="21.0" prefWidth="61.0" text="Nom" textFill="#231955" />
+      <Label layoutX="37.0" layoutY="256.0" prefHeight="21.0" prefWidth="79.0" text="Prenom" />
+      <Label layoutX="37.0" layoutY="325.0" prefHeight="21.0" prefWidth="61.0" text="E-mail" />
+      <Label layoutX="37.0" layoutY="377.0" text="Tel" />
+      <Label layoutX="37.0" layoutY="438.0" prefHeight="21.0" prefWidth="79.0" text="Etat" />
+      <Label layoutX="30.0" layoutY="487.0" text="Description" />
+      <Label layoutX="30.0" layoutY="533.0" prefHeight="21.0" prefWidth="136.0" text="Date Reclamation" />
+      <TextField fx:id="tfnom" layoutX="139.0" layoutY="191.0" promptText="ex : farjallah" />
+      <TextField fx:id="tfprenom" layoutX="139.0" layoutY="254.0" promptText="ex : Anis" />
+      <TextField fx:id="tfemail" layoutX="139.0" layoutY="323.0" promptText="\@xyz.com" />
+      <TextField fx:id="tftel" layoutX="139.0" layoutY="373.0" promptText="veuillez ecrire votre numéro" />
+      <TextField fx:id="tfetat" layoutX="139.0" layoutY="436.0" />
+      <TextField fx:id="tfdescription" layoutX="139.0" layoutY="483.0" />
+      <Button fx:id="btnajouter" layoutX="87.0" layoutY="578.0" mnemonicParsing="false" onAction="#ajouterreclamation" style="-fx-background-color: #7A86B6;" text="Ajouter " />
+      <DatePicker fx:id="tfdatereclamation" layoutX="139.0" layoutY="531.0" promptText="selectionnez une date valide" />
+      <Button layoutX="183.0" layoutY="578.0" mnemonicParsing="false" onAction="#modifierReclamation" style="-fx-background-color: #7A86B6;" text="Modifier" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="800.0" prefWidth="1099.0" style="-fx-background-color: ffff;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.GestionReclamationController">
+   <children>
+      <TableView fx:id="TableReclamation" layoutX="470.0" layoutY="228.0" prefHeight="357.0" prefWidth="572.0" style="-fx-background-color: #CFF5E7;">
+        <columns>
+          <TableColumn fx:id="tblNom" prefWidth="50.0" text="Nom" />
+          <TableColumn fx:id="tblPrenom" prefWidth="75.0" text="Prenom" />
+            <TableColumn fx:id="tblEmail" prefWidth="47.0" text="Email" />
+            <TableColumn fx:id="tblTel" prefWidth="56.0" text="Tel" />
+            <TableColumn fx:id="tblEtat" prefWidth="63.0" text="Etat" />
+            <TableColumn fx:id="tblDescription" prefWidth="122.0" text="Description" />
+            <TableColumn fx:id="tblDateReclamation" prefWidth="158.0" text="Date_Reclamation" />
+        </columns>
+      </TableView>
+      <Button layoutX="762.0" layoutY="613.0" mnemonicParsing="false" onMouseClicked="#UpdateReclamation" style="-fx-background-color: #95D1CC;" text="Modifier" />
+      <TextField fx:id="recherchet" layoutX="679.0" layoutY="103.0" onKeyPressed="#recherche_avance" />
+      <Button layoutX="930.0" layoutY="103.0" mnemonicParsing="false" onAction="#refreshlist" style="-fx-background-color: #95D1CC;" text="Refresh" />
+      <Button layoutX="909.0" layoutY="613.0" mnemonicParsing="false" onMouseClicked="#deleteReclamation" style="-fx-background-color: #95D1CC;" text="Supprimer" />
+      <Button layoutX="650.0" layoutY="613.0" mnemonicParsing="false" style="-fx-background-color: #95D1CC;" text="excel" />
+      <Button layoutX="531.0" layoutY="613.0" mnemonicParsing="false" onMouseClicked="#AjouterReclamatioRD" style="-fx-background-color: #95D1CC;" text="Ajouter" />
+      <TextArea fx:id="nomRec" layoutX="206.0" layoutY="196.0" prefHeight="0.0" prefWidth="187.0" />
+      <TextArea fx:id="preRec" layoutX="206.0" layoutY="260.0" prefHeight="47.0" prefWidth="187.0" />
+      <TextArea fx:id="telfRec" layoutX="206.0" layoutY="389.0" prefHeight="47.0" prefWidth="187.0" />
+      <TextArea fx:id="emailRec" layoutX="206.0" layoutY="321.0" prefHeight="48.0" prefWidth="187.0" />
+      <TextArea fx:id="etatRec" layoutX="206.0" layoutY="454.0" prefHeight="48.0" prefWidth="187.0" />
+      <TextArea fx:id="descriptionRec" layoutX="206.0" layoutY="519.0" prefHeight="48.0" prefWidth="187.0" />
+      <TextArea fx:id="dateRec" layoutX="206.0" layoutY="591.0" prefHeight="48.0" prefWidth="187.0" />
+      <TextArea fx:id="idRec" layoutX="51.0" layoutY="14.0" opacity="0.0" prefHeight="31.0" prefWidth="200.0" />
+      <Label layoutX="53.0" layoutY="210.0" prefWidth="77.0" text="Nom">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font></Label>
+      <Label layoutX="53.0" layoutY="274.0" text="Prenom">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font></Label>
+      <Label layoutX="53.0" layoutY="335.0" text="Email">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font></Label>
+      <Label layoutX="53.0" layoutY="403.0" text="Tel">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font></Label>
+      <Label layoutX="53.0" layoutY="468.0" text="Etat">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font></Label>
+      <Label layoutX="53.0" layoutY="533.0" text="Description">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font></Label>
+      <Label layoutX="43.0" layoutY="605.0" text="Date_Reclamation">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font></Label>
+   </children>
+</AnchorPane>

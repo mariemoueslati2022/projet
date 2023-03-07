@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="800.0" prefWidth="1099.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.PasserCommandeController">
+   <children>
+      <ChoiceBox fx:id="checbox" layoutX="599.0" layoutY="440.0" prefWidth="150.0" />
+      <Label layoutX="418.0" layoutY="442.0" prefHeight="21.0" prefWidth="123.0" text="Mode Payment :">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="418.0" layoutY="387.0" prefHeight="17.0" prefWidth="79.0" text="Total Prix :">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="418.0" layoutY="335.0" prefHeight="17.0" prefWidth="79.0" text="Client  :">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="username" layoutX="605.0" layoutY="337.0" prefHeight="17.0" prefWidth="123.0" text="Label" />
+      <Label fx:id="prix" layoutX="605.0" layoutY="389.0" prefHeight="17.0" prefWidth="123.0" text="Label" />
+      <Button layoutX="549.0" layoutY="520.0" mnemonicParsing="false" onAction="#PasserCommande" text="Passer" />
+      <Label layoutX="518.0" layoutY="251.0" prefHeight="21.0" prefWidth="112.0" text="Commande ">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

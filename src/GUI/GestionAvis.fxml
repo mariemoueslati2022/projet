@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="800.0" prefWidth="1099.0" style="-fx-background-color: ffff;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.GestionAvisController">
+    <children>
+
+        <Button fx:id="modifierAvis" layoutX="641.0" layoutY="463.0" mnemonicParsing="false" onMouseClicked="#updateAvis" style="-fx-background-color: FFE15D;" text="modifier" />
+        <Button fx:id="supprimerButton" layoutX="799.0" layoutY="463.0" mnemonicParsing="false" onAction="#deleteAvis" style="-fx-background-color: FFE15D;" text="Supprimer" />
+      <Button layoutX="468.0" layoutY="463.0" mnemonicParsing="false" onMouseClicked="#AjouterAvisRD" style="-fx-background-color: FFE15D;" text="Ajouter" />
+      <TextArea fx:id="ratingAvis" layoutX="160.0" layoutY="168.0" prefHeight="54.0" prefWidth="157.0" style="-fx-background-color: #BFDB38;" />
+      <TextArea fx:id="commentaireAvis" layoutX="160.0" layoutY="253.0" prefHeight="54.0" prefWidth="157.0" style="-fx-background-color: #BFDB38;" />
+      <TextArea fx:id="titreAvis" layoutX="160.0" layoutY="334.0" prefHeight="54.0" prefWidth="157.0" style="-fx-background-color: #BFDB38;" />
+      <TextArea fx:id="idAvis" layoutX="160.0" layoutY="45.0" opacity="0.0" prefHeight="69.0" prefWidth="179.0" />
+      <Label layoutX="57.0" layoutY="185.0" text="Rating">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="32.0" layoutY="267.0" text="Commentaire">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="57.0" layoutY="351.0" text="Titre">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <ListView fx:id="listviewOffre" layoutX="416.0" layoutY="108.0" onMouseClicked="#selected" prefHeight="296.0" prefWidth="520.0" style="-fx-background-color: #BFDB38;" />
+      <Label layoutX="444.0" layoutY="59.0" text="Rating" textFill="#cfe40c">
+         <font>
+            <Font name="Arial Bold Italic" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="631.0" layoutY="59.0" text="Commentaire" textFill="#cbe40e">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="819.0" layoutY="59.0" text="Titre" textFill="#dae412">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+    </children>
+</AnchorPane>
